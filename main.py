@@ -6,7 +6,7 @@ BOT_TOKEN = '6986373519:AAGkd_dmH4JdMhtjOfm75CuyBmDvSiBMfJQ'
 TEXT = 'Опа, апдейт'
 MAX_COUNTER = 100
 
-offset = -2
+offset = -1
 counter = 0
 chat_id: int
 get_text = ''
