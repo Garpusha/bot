@@ -1,30 +1,32 @@
 import requests
+from pprint import pprint
 import time
 
+
 API_URL = 'https://api.telegram.org/bot'
+API_CATS_URL = 'https://api.thecatapi.com/v1/images/search'
 BOT_TOKEN = '6986373519:AAGkd_dmH4JdMhtjOfm75CuyBmDvSiBMfJQ'
-TEXT = 'Опа, апдейт'
-MAX_COUNTER = 100
+ERROR_TEXT = 'Здесь должна была быть картинка с котиком :('
 
-offset = -1
+offset = -2
 counter = 0
-chat_id: int
-get_text = ''
+cat_response: requests.Response
+cat_link: str
 
-while True:
 
-    print('attempt =', counter)  #Чтобы видеть в консоли, что код живет
-
+while counter < 100:
+    print('attempt =', counter)
     updates = requests.get(f'{API_URL}{BOT_TOKEN}/getUpdates?offset={offset + 1}').json()
     if updates['result']:
         for result in updates['result']:
-            get_text = result['message']['text']
             offset = result['update_id']
             chat_id = result['message']['from']['id']
-            requests.get(f'{API_URL}{BOT_TOKEN}/sendMessage?chat_id={chat_id}&text={TEXT}')
+            cat_response = requests.get(API_CATS_URL)
+            if cat_response.status_code == 200:
+                cat_link = cat_response.json()[0]['url']
+                requests.get(f'{API_URL}{BOT_TOKEN}/sendPhoto?chat_id={chat_id}&photo={cat_link}')
+            else:
+                requests.get(f'{API_URL}{BOT_TOKEN}/sendMessage?chat_id={chat_id}&text={ERROR_TEXT}')
 
-    if get_text.upper() == 'STOP':
-        break
     time.sleep(1)
     counter += 1
-
