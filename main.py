@@ -16,7 +16,7 @@ cat_response: requests.Response
 cat_link: str
 
 
-while counter < 100:
+while True:
     print('attempt =', counter)
     updates = requests.get(f'{API_URL}{BOT_TOKEN}/getUpdates?offset={offset + 1}').json()
     if updates['result']:
@@ -31,4 +31,4 @@ while counter < 100:
                 requests.get(f'{API_URL}{BOT_TOKEN}/sendMessage?chat_id={chat_id}&text={ERROR_TEXT}')
 
     time.sleep(1)
-    counter += 1
+    # counter += 1
