@@ -1,11 +1,13 @@
 import requests
-from pprint import pprint
+# from pprint import pprint
 import time
 
+with open('http_api_token.txt', 'r') as token_file:
+    BOT_TOKEN = token_file.readline()
 
 API_URL = 'https://api.telegram.org/bot'
 API_CATS_URL = 'https://api.thecatapi.com/v1/images/search'
-BOT_TOKEN = '6986373519:AAGkd_dmH4JdMhtjOfm75CuyBmDvSiBMfJQ'
+
 ERROR_TEXT = 'Здесь должна была быть картинка с котиком :('
 
 offset = -2

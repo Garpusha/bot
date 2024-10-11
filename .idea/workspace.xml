@@ -4,6 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+    <list default="true" id="514603d1-2d50-437a-b588-cf00613bf24b" name="Changes" comment="Test bot - kotobot">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,13 +44,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -73,6 +75,39 @@
       <option name="project" value="LOCAL" />
       <updated>1728474051075</updated>
     </task>
+    <task id="LOCAL-00002" summary="Test bot - updates">
+      <option name="closed" value="true" />
+      <created>1728639471199</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728639471199</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Test bot - updates">
+      <option name="closed" value="true" />
+      <created>1728644113753</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728644113753</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Test bot - updates">
+      <option name="closed" value="true" />
+      <created>1728644227224</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728644227224</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Test bot - kotobot">
+      <option name="closed" value="true" />
+      <created>1728648436917</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1728648436917</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -88,5 +123,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
+    <MESSAGE value="Test bot - updates" />
+    <MESSAGE value="Test bot - kotobot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test bot - kotobot" />
   </component>
 </project>
